@@ -1,6 +1,33 @@
-* {
-  padding: 12px;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
-h1 {
-  color: red;
+
+.boton{
+  background-color: grey;
+  margin:10px;
 }
+
+#pantalla{
+  margin: 10px;
+
+  background-color: white;
+}
+
+#cuerpo{
+  background-color: brown;
+  margin: 10%;
+ 
+}
+
+#teclas{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+
+
+
+
