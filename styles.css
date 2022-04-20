@@ -7,6 +7,8 @@
 .boton{
   background-color: grey;
   margin:10px;
+  border-radius: 15px;
+  
 }
 
 #pantalla{
@@ -15,14 +17,18 @@
   border-radius: 15px;
   height: 100px;
   
+  
 }
 
 #cuerpo{
   
   display: flex;
   flex-direction: column;
-  background-color: brown;
+  justify-content: center;
+  
+  background-color: blue;
   margin: 5%;
+  height: 500px;
   
   border-radius: 15px;
 }
@@ -32,6 +38,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  height: 350px;
+  
   
 }
 
@@ -128,17 +136,34 @@
 
 }
 
+
 button{
   width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  background-color: white;
+  font-size: 20px;
  
 
 }
 
+button:hover{
+  background-color: rgba(231, 249, 245, 0.323);
+}
 
-@media(max-width:300px){
+button:active {
+  background-color: rgba(231, 249, 245, 0.323)
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+
+
+
+@media(max-width:400px){
   
   #cuerpo{
-    width: 270px;
+    width: 370px;
   }
 }
 
@@ -147,7 +172,9 @@ button{
 
   #cuerpo{
     width: 540px;
+    
     margin: auto;
+    margin-top: 5%;
   }
 }
 
