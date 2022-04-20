@@ -12,6 +12,9 @@
 #pantalla{
   margin: 10px;
   background-color: white;
+  border-radius: 15px;
+  height: 100px;
+  
 }
 
 #cuerpo{
@@ -19,7 +22,9 @@
   display: flex;
   flex-direction: column;
   background-color: brown;
-  margin: 10%;
+  margin: 5%;
+  
+  border-radius: 15px;
 }
 
 
@@ -130,6 +135,20 @@ button{
 }
 
 
+@media(max-width:300px){
+  
+  #cuerpo{
+    width: 270px;
+  }
+}
 
+
+@media(min-width:600px){
+
+  #cuerpo{
+    width: 540px;
+    margin: auto;
+  }
+}
 
 
