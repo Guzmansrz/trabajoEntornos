@@ -152,7 +152,7 @@ button:hover{
 }
 
 button:active {
-  background-color: rgba(231, 249, 245, 0.323)
+  background-color: rgba(231, 249, 245, 0.323);
   box-shadow: 0 5px #666;
   transform: translateY(2px);
 }
