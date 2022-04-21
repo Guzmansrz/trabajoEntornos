@@ -39,11 +39,10 @@ class Output{
     }
 
     imprimirNumeros() {
-        // console.log("Primer numero: " + this.primerNumero);
-        // console.log("Segundo numero: " + this.segundoNumero);
-        // this.outputValorActual.textContent = this.primerNumero;
-        // this.outputValorAnterior.textContent = `${this.segundoNumero} ${this.signos[this.Operacion] || ''}`;
+        console.log("Primer numero: " + this.primerNumero);
+        console.log("Segundo numero: " + this.segundoNumero);
         this.outputValorActual.textContent = this.primerNumero;
-        this.outputValorAnterior.textContent = this.segundoNumeroNumero;
+        this.outputValorAnterior.textContent = `${this.segundoNumero} ${this.signos[this.Operacion] || ''}`;
+        
     }
 }
