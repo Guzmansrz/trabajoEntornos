@@ -1,6 +1,5 @@
 'use strict'
 
-
 const outputValorAnterior = document.getElementById('primerValor');
 const outputValorActual = document.getElementById('segundoValor');
 const numeros = document.querySelectorAll('.boton_numero');
