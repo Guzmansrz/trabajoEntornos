@@ -7,10 +7,10 @@ class Output{
         this.primerNumero = '';
         this.segundoNumero = '';
         this.signos = {
-            sumar: '+',
+            suma: '+',
             cociente: '%',
             producto: 'x',
-            restar: '-', 
+            resta: '-', 
         }
     }
 
@@ -26,8 +26,9 @@ class Output{
     operar(tipo) {
         this.Operacion !== 'igual' && this.calcular();
         this.Operacion = tipo;
-        if(!isNaN(this.primerNumero)) 
-            this.segundoNumero = this.primerNumero;
+        this.segundoNumero = this.primerNumero || this.segundoNumero;
+        // if(!isNaN(this.primerNumero)) 
+        //     this.segundoNumero = this.primerNumero;
         this.primerNumero = '';
         this.imprimirNumeros();
     }
@@ -39,8 +40,6 @@ class Output{
     }
 
     imprimirNumeros() {
-        console.log("Primer numero: " + this.primerNumero);
-        console.log("Segundo numero: " + this.segundoNumero);
         this.outputValorActual.textContent = this.primerNumero;
         this.outputValorAnterior.textContent = `${this.segundoNumero} ${this.signos[this.Operacion] || ''}`;
         
