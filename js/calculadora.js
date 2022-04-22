@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = class Calculadora {
+class Calculadora {
   suma(num1, num2) {
     return num1 + num2;
   }
