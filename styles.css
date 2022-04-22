@@ -11,10 +11,20 @@
 }
 
 #pantalla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   margin: 10px;
   background-color: white;
   border-radius: 15px;
   height: 100px;
+}
+
+#pantalla div {
+  /* background-color: aqua; */
+  height: 40%;
+  margin: 5px;
 }
 
 #cuerpo {
