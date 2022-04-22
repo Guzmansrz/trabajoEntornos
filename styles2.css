@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.boton{
+  background-color: grey;
+  margin:10px;
+  border-radius: 15px;
+  
+}
+
+#pantalla{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 10px;
+  background-color: white;
+  border-radius: 15px;
+  height: 100px;
+  
+  
+}
+
+#pantalla div{
+  /* background-color: aqua; */
+  height: 40%;
+  margin: 5px;
+}
+
+#cuerpo{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  background-color: blue;
+  margin: 5%;
+  height: 500px;
+  
+  border-radius: 15px;
+}
+
+
+#teclas{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 10px;
+  gap:5px;
+  height: 350px;
+  
+  
+}
+
+
+
+
+button:nth-of-type(1){
+  grid-row: 3/4;
+  grid-column: 1/2;;
+
+}
+button:nth-of-type(2){
+  grid-row: 3/4;
+  grid-column: 2/3;;
+
+}
+
+button:nth-of-type(3){
+  grid-row: 3/4;
+  grid-column: 3/4;;
+
+}
+
+button:nth-of-type(4){
+  grid-row: 2/3;
+  grid-column: 1/2;;
+
+}
+button:nth-of-type(5){
+  grid-row: 2/3;
+  grid-column: 2/3;;
+
+}
+
+button:nth-of-type(6){
+  grid-row: 2/3;
+  grid-column: 3/4;;
+
+}
+
+button:nth-of-type(7){
+  grid-row: 1/2;
+  grid-column: 1/2;;
+
+}
+button:nth-of-type(8){
+  grid-row: 1/2;
+  grid-column: 2/3;;
+
+}
+
+button:nth-of-type(9){
+  grid-row: 1/2;
+  grid-column: 3/4;;
+
+}
+
+button:nth-of-type(10){
+  grid-row: 4/5;
+  grid-column: 1/2;
+
+}
+
+button:nth-of-type(11){
+  grid-row: 1/2;
+  grid-column: 4/5;
+
+}
+button:nth-of-type(12){
+  grid-row: 2/3;
+  grid-column: 4/5;
+
+}
+button:nth-of-type(13){
+  grid-row: 3/4;
+  grid-column: 4/5;
+
+}
+button:nth-of-type(14){
+  grid-row: 4/5;
+  grid-column: 4/5;
+
+}
+
+button:nth-of-type(15){
+  grid-row: 4/5;
+  grid-column: 3/4;
+
+}
+
+button:nth-of-type(16){
+  grid-row: 4/5;
+  grid-column: 2/3;
+
+}
+
+
+button{
+  width: 100%;
+  
+  border-radius: 15px;
+  height: 100%;
+  background-color: white;
+  font-size: 20px;
+ 
+
+}
+
+button:hover{
+  background-color: rgba(231, 249, 245, 0.323);
+}
+
+button:active {
+  background-color: rgba(231, 249, 245, 0.323);
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}
+
+
+
+
+@media(max-width:400px){
+  
+  #cuerpo{
+    width: 370px;
+  }
+}
+
+
+@media(min-width:600px){
+
+  #cuerpo{
+    width: 540px;
+    
+    margin: auto;
+    margin-top: 5%;
+  }
+}
+
+
