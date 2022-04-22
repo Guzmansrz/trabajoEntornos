@@ -27,8 +27,6 @@ class Output{
         this.Operacion !== 'igual' && this.calcular();
         this.Operacion = tipo;
         this.segundoNumero = this.primerNumero || this.segundoNumero;
-        // if(!isNaN(this.primerNumero)) 
-        //     this.segundoNumero = this.primerNumero;
         this.primerNumero = '';
         this.imprimirNumeros();
     }
