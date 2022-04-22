@@ -17,3 +17,5 @@ class Calculadora {
     return num1 / num2;
   }
 };
+
+module.exports=Calculadora;
