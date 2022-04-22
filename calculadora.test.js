@@ -1,4 +1,6 @@
-const calculadora = require("./calculadora");
+const Calculadora = require("./js/calculadora");
+
+var calculadora = new Calculadora();
 
 describe("funcion suma", () => {
   test("suma numeros positivos enteros", () => {
@@ -13,7 +15,7 @@ describe("funcion suma", () => {
 });
 describe("funcion resta", () => {
   test("resta numeros positivos enteros", () => {
-    expect(calculadora.resta(12, 34)).toBe(46);
+    expect(calculadora.resta(12, 34)).toBe(-22);
   });
   test("resta numeros positivos decimales", () => {
     expect(calculadora.resta(12.3, 2.3)).toBe(10);
@@ -44,6 +46,6 @@ describe("funcion cociente", () => {
     expect(calculadora.cociente(0, 2)).toBe(0);
   });
   test("cociente un divisor es cero", () => {
-    expect(calculadora.cociente(2, 0)).toBe("No se puede dividir por cero");
+    expect(calculadora.cociente(2, 0)).toBe(Infinity);
   });
 });

@@ -1,0 +1,26 @@
+{
+  "name": "trabajoentornos",
+  "version": "1.0.0",
+  "description": "calculadora entornos",
+  "main": "calculadora.test.js",
+  "scripts": {
+    "test": "jest",
+    "testWatch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guzmansrz/trabajoEntornos.git"
+  },
+  "keywords": [
+    "calculadora"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guzmansrz/trabajoEntornos/issues"
+  },
+  "homepage": "https://github.com/Guzmansrz/trabajoEntornos#readme",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
