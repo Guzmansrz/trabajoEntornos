@@ -41,7 +41,7 @@
 
 #teclas {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   height: 350px;
 }
@@ -94,31 +94,43 @@
 }
 
 .boton:nth-of-type(11) {
-  grid-row: 1/2;
-  grid-column: 4/5;
-}
-.boton.signo:nth-of-type(12) {
-  grid-row: 2/3;
-  grid-column: 4/5;
-}
-.boton.signo:nth-of-type(13) {
   grid-row: 3/4;
   grid-column: 4/5;
 }
-.signo:nth-of-type(14) {
-  grid-row: 4/5;
+.boton.signo:nth-of-type(12) {
+  grid-row: 3/4;
+  grid-column: 5/6;
+}
+.boton.signo:nth-of-type(13) {
+  grid-row: 2/3;
   grid-column: 4/5;
+}
+.signo:nth-of-type(14) {
+  grid-row: 2/3;
+  grid-column: 5/6;
 }
 
 .signo:nth-of-type(15) {
   grid-row: 4/5;
-  grid-column: 3/4;
+  grid-column: 5/6;
 }
 
 .signo:nth-of-type(16) {
   grid-row: 4/5;
   grid-column: 2/3;
 }
+
+.signo:nth-of-type(17) {
+  grid-row: 4/5;
+  grid-column: 4/5;
+}
+
+.signo:nth-of-type(18) {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+
+
 
 button {
   width: 100%;
