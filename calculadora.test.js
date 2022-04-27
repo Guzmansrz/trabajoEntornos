@@ -1,4 +1,3 @@
-
 const Calculadora = require("./js/calculadora");
 
 var calculadora = new Calculadora();
@@ -10,7 +9,7 @@ describe("funcion suma", () => {
   test("suma numeros positivos decimales", () => {
     expect(calculadora.suma(12.3, 34.7)).toBe(47);
   });
-  test("suma un numero es cero", () => {
+  test("suma en la cual un numero es cero", () => {
     expect(calculadora.suma(12, 0)).toBe(12);
   });
 });
