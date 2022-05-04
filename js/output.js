@@ -17,7 +17,13 @@ class Output{
     }
 
     borrarTodo(){
-        
+        if(this.segundoNumero !== null){
+            this.segundoNumero = null;
+        }else{
+            this.Operacion = undefined;
+            this.primerNumero = null;
+        }
+        this.imprimirNumeros();
     }
 
     calcular() {
