@@ -49,3 +49,32 @@ describe("funcion cociente", () => {
     expect(calculadora.cociente(2, 0)).toBe(Infinity);
   });
 });
+describe("funcion raizCuadrada", () => {
+  test("raiz cuadrada de un numero entero positivo", () => {
+    expect(calculadora.raizCuadrada(4)).toBe(2);
+  });
+  test("raiz cuadrada de un numero decimal", () => {
+    expect(calculadora.raizCuadrada(1.8)).toBe(1.341640786499874);
+  });
+  test("raiz cuadrada de cero", () => {
+    expect(calculadora.raizCuadrada(0)).toBe(0);
+  });
+});
+
+describe("Potencia", () => {
+  test("Potencia de un numero entero positivo", () => {
+    expect(calculadora.potencia(4, 2)).toBe(16);
+  });
+  test("Potencia con un numero decimal", () => {
+    expect(calculadora.potencia(1.5, 4)).toBe(5, 0625);
+  });
+  test("Potencia el exponente es cero", () => {
+    expect(calculadora.potencia(4, 0)).toBe(1);
+  });
+  test("Potencia la base es cero", () => {
+    expect(calculadora.potencia(0, 6)).toBe(0);
+  });
+  test("Potencia base y exponente es cero", () => {
+    expect(calculadora.potencia(0, 0)).toBe(1);
+  });
+});
