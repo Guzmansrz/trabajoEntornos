@@ -16,6 +16,13 @@ class Output{
         }
     }
 
+    borrarTodo(){
+        this.primerNumero = '';
+        this.segundoNumero = '';
+        this.Operacion = undefined;
+        this.imprimirNumeros();
+    }
+
     calcular() {
         const primerNumero = parseFloat(this.primerNumero);
         const segundoNumero = parseFloat(this.segundoNumero);
