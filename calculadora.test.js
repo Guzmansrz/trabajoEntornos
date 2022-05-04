@@ -66,7 +66,7 @@ describe("Potencia", () => {
     expect(calculadora.potencia(4, 2)).toBe(16);
   });
   test("Potencia con un numero decimal", () => {
-    expect(calculadora.potencia(1.5, 4)).toBe(5, 0625);
+    expect(calculadora.potencia(1.5, 4)).toBe(5.0625);
   });
   test("Potencia el exponente es cero", () => {
     expect(calculadora.potencia(4, 0)).toBe(1);
