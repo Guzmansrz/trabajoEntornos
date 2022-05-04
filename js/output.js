@@ -10,8 +10,20 @@ class Output{
             suma: '+',
             cociente: '%',
             producto: 'x',
-            resta: '-', 
+            resta: '-',
+            potencia: '^',
+            raiz: '√' 
         }
+    }
+
+    borrarTodo(){
+        if(this.segundoNumero !== null){
+            this.segundoNumero = null;
+        }else{
+            this.Operacion = undefined;
+            this.primerNumero = null;
+        }
+        this.imprimirNumeros();
     }
 
     calcular() {
