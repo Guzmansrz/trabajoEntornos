@@ -51,13 +51,13 @@ describe("funcion cociente", () => {
 });
 describe("funcion raizCuadrada", () => {
   test("raiz cuadrada de un numero entero positivo", () => {
-    expect(calculadora.raizCuadrada(4)).toBe(2);
+    expect(calculadora.raiz(4)).toBe(2);
   });
   test("raiz cuadrada de un numero decimal", () => {
-    expect(calculadora.raizCuadrada(1.8)).toBe(1.341640786499874);
+    expect(calculadora.raiz(1.8)).toBe(1.3416407864998738);
   });
   test("raiz cuadrada de cero", () => {
-    expect(calculadora.raizCuadrada(0)).toBe(0);
+    expect(calculadora.raiz(0)).toBe(0);
   });
 });
 
