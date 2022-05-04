@@ -10,8 +10,14 @@ class Output{
             suma: '+',
             cociente: '%',
             producto: 'x',
-            resta: '-', 
+            resta: '-',
+            potencia: '^',
+            raiz: '√' 
         }
+    }
+
+    borrarTodo(){
+        
     }
 
     calcular() {
