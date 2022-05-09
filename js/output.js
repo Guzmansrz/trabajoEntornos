@@ -16,6 +16,11 @@ class Output{
         }
     }
 
+    borrar(){
+        this.segundoNumero = this.segundoNumero.toString().slice(0,-1);
+        this.imprimirNumeros();
+    }
+
     borrarTodo(){
         this.primerNumero = '';
         this.segundoNumero = '';
